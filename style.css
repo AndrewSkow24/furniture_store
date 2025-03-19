@@ -1,0 +1,24 @@
+/* 1 верхние ссылки (каталог, коризина */
+.nav__link {
+  font-size: 16px;
+  line-height: 20px;
+}
+
+/* 2 всё что заслуживает ваш дом */
+.top__title {
+  font-weight: 600px;
+  font-size: 64px;
+  line-height: 70px;
+}
+
+/* 3 наша мебель ваше отражение  */
+.top__text {
+  font-size: 24px;
+  line-height: 32px;
+}
+
+/* 4 ссылка перейти в каталог */
+.top__link {
+  font-size: 16px;
+  line-height: 24px;
+}
