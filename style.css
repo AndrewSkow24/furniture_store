@@ -22,3 +22,93 @@
   font-size: 16px;
   line-height: 24px;
 }
+
+/* 5. h2 Специальные предлжения */
+.product-box__title {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 59px;
+  color: #000000;
+}
+
+/* 6. h3 кресло vilora */
+.product-content__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+/* 7. Параграф Мягкое и уютное .... */
+.product-content__text {
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+}
+
+/* 8. параграф p 21 000 */
+.price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #050505;
+}
+
+/* 9. параграф с зачёркнутой ценой */
+.old_price {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration-line: line-through;
+  color: #888888;
+}
+
+/* 10. h4 с текстом меню и контакты */
+.footer__content__title {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  color: #000000;
+}
+
+/* 11. нижние ссылки в подвале 
+(главная, каталог, корзина, номер телефона, email)*/
+.footer-link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #888888;
+  text-decoration: none;
+}
+
+/* 12. текст получайте обновления */
+.footer_content_box {
+  font-size: 14px;
+  line-height: 16px;
+  color: #000000;
+}
+
+/* 13. поле ввода input type email */
+.footer-email {
+  background: #ffffff;
+  border: 1px solid #c4c4c4;
+  box-sizing: border-box;
+  border-radius: 20px;
+  font-style: normal;
+  font-size: 15px;
+  line-height: 18px;
+  color: #c4c4c4;
+}
+
+/* 14. кнопка подписаться */
+.footer-button {
+  background: rgba(222, 215, 215, 0.41);
+  border: 1px solid #ffffff;
+  box-sizing: border-box;
+  border-radius: 20px;
+  width: 275px;
+  height: 46px;
+  font-size: 15px;
+  line-height: 18px;
+  color: #000000;
+}
