@@ -1,20 +1,73 @@
+/* 
+
+
+ 
+
+
+ 
+
+ 
+
+
+
+ 
+
+
+/* Первой строкой в файле style.css необходимо добавить обнуление стилей (синтаксис можно найти в шпаргалке): */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Добавить нижнее подчеркивание при наведении на ссылки меню «Главная», «Каталог», «Корзина». 
+(Внимание: «Меню» есть как в 'header', так и в 'footer'.) */
+
+/* Добавить серый цвет всем ссылкам из меню и списка контактов. */
+
+/* 
+Для тега 
+<header></header>
+ задать высоту 76px  */
+
+.header {
+  height: 76px;
+}
+
 /* 1 верхние ссылки (каталог, коризина */
-.nav__link {
+.header__link {
   font-size: 16px;
   line-height: 20px;
+  text-decoration: none;
+  color: gray;
+}
+
+.header__link:hover {
+  text-decoration: underline;
 }
 
 /* 2 всё что заслуживает ваш дом */
+/* Заголовок 
+<h1>
+ (Всё, чего заслуживает ваш дом):
+ Верхний отступ 64px.
+ Нижний отступ 16px. */
 .top__title {
   font-weight: 600px;
   font-size: 64px;
   line-height: 70px;
+  padding-top: 64px;
+  padding-bottom: 16px;
 }
 
 /* 3 наша мебель ваше отражение  */
+/* <p></p>
+ (Наша мебель — ваше отражение):
+ Нижний отступ 16px. */
 .top__text {
   font-size: 24px;
   line-height: 32px;
+  margin-bottom: 16px;
 }
 
 /* 4 ссылка перейти в каталог */
@@ -24,30 +77,44 @@
 }
 
 /* 5. h2 Специальные предлжения */
-.product-box__title {
+/* Заголовок 
+<h2></h2>
+ с текстом «Специальные предложения» (который вы делали в первом домашнем задании):
+ Нижний отступ 32px. */
+.product-content__title {
   font-weight: 600;
   font-size: 48px;
   line-height: 59px;
   color: #000000;
+  padding-bottom: 32px;
 }
 
 /* 6. h3 кресло vilora */
-.product-content__title {
+/* <h3></h3>
+ с текстом «Кресло VILORA»:
+ Нижний отступ 8px. */
+.product-item__title {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+  margin-bottom: 8px;
 }
 
 /* 7. Параграф Мягкое и уютное .... */
-.product-content__text {
+/* <p></p>
+ с текстом «Мягкое и уютное, аккуратное и стильное»:
+ Нижний отступ 12px.
+ */
+.product-item__text {
   font-size: 14px;
   line-height: 17px;
   color: #888888;
+  margin-bottom: 12px;
 }
 
 /* 8. параграф p 21 000 */
-.price {
+.product_price {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
@@ -64,11 +131,15 @@
 }
 
 /* 10. h4 с текстом меню и контакты */
+/* <h4></h4>
+ с текстом «Меню»:
+ Нижний отступ 12px. */
 .footer__content__title {
   font-weight: 500;
   font-size: 24px;
   line-height: 29px;
   color: #000000;
+  margin-bottom: 12px;
 }
 
 /* 11. нижние ссылки в подвале 
@@ -81,11 +152,19 @@
   text-decoration: none;
 }
 
+.footer-link:hover {
+  text-decoration: underline;
+}
+
 /* 12. текст получайте обновления */
-.footer_content_box {
+/* <p></p>
+ с текстом «Получайте наши новости и обновления»:
+ Нижний отступ 16px. */
+.footer__text {
   font-size: 14px;
   line-height: 16px;
   color: #000000;
+  margin-bottom: 16px;
 }
 
 /* 13. поле ввода input type email */
