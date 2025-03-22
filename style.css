@@ -1,37 +1,49 @@
-/* 
-
-
- 
-
-
- 
-
- 
-
-
-
- 
-
-
-/* Первой строкой в файле style.css необходимо добавить обнуление стилей (синтаксис можно найти в шпаргалке): */
-
 * {
   margin: 0;
   padding: 0;
 }
 
-/* Добавить нижнее подчеркивание при наведении на ссылки меню «Главная», «Каталог», «Корзина». 
-(Внимание: «Меню» есть как в 'header', так и в 'footer'.) */
-
-/* Добавить серый цвет всем ссылкам из меню и списка контактов. */
-
-/* 
-Для тега 
-<header></header>
- задать высоту 76px  */
+a {
+  text-decoration: none;
+}
 
 .header {
   height: 76px;
+}
+
+body {
+  font-family: Montserrat, sans-serif;
+}
+
+.top {
+  height: 735px;
+  background: url(img/header.png), rgb(196, 196, 196);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.header__input {
+  width: 288px;
+  height: 41px;
+  box-sizing: border-box;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 20px;
+  background-color: transparent;
+  outline: none;
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 32px;
+  padding-right: 32px;
+  box-sizing: border-box;
+}
+
+.header__input::placeholder {
+  color: rgb(255, 255, 255);
 }
 
 /* 1 верхние ссылки (каталог, коризина */
@@ -58,6 +70,12 @@
   line-height: 70px;
   padding-top: 64px;
   padding-bottom: 16px;
+
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 /* 3 наша мебель ваше отражение  */
