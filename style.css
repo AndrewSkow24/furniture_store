@@ -133,6 +133,11 @@ body {
   text-decoration: underline;
 }
 
+.product-content {
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
 /* 5. h2 Специальные предлжения */
 /* Заголовок 
 <h2></h2>
@@ -144,6 +149,17 @@ body {
   line-height: 59px;
   color: #000000;
   padding-bottom: 32px;
+  margin-top: 64px;
+}
+
+.product-item {
+  /* height: 377px; */
+  width: 370px;
+}
+
+.product_image {
+  margin-bottom: 10px;
+  height: 250px;
 }
 
 /* 6. h3 кресло vilora */
@@ -156,6 +172,7 @@ body {
   line-height: 29px;
   color: #000000;
   margin-bottom: 8px;
+  /* height: 29px; */
 }
 
 /* 7. Параграф Мягкое и уютное .... */
