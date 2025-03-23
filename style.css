@@ -9,7 +9,22 @@ a {
 
 .header {
   height: 76px;
+  margin-left: 103px;
+  margin-right: 101px;
 }
+
+.top__section {
+  width: 1236px;
+  height: 290px;
+  margin-left: 103px;
+  margin-right: 101px;
+}
+
+/* .nav,
+header {
+  margin-left: 120px;
+  margin-right: 120px;
+} */
 
 body {
   font-family: Montserrat, sans-serif;
@@ -23,6 +38,12 @@ body {
   background-size: cover;
 }
 
+/* интерьер */
+.top__logo {
+  width: 198px;
+}
+
+/* поиск */
 .header__input {
   width: 288px;
   height: 41px;
@@ -48,10 +69,15 @@ body {
 
 /* 1 верхние ссылки (каталог, коризина */
 .header__link {
-  font-size: 16px;
-  line-height: 20px;
   text-decoration: none;
-  color: gray;
+  width: 66px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .header__link:hover {
@@ -65,11 +91,12 @@ body {
  Верхний отступ 64px.
  Нижний отступ 16px. */
 .top__title {
+  width: 792px;
   font-weight: 600px;
   font-size: 64px;
   line-height: 70px;
-  padding-top: 64px;
-  padding-bottom: 16px;
+  margin-top: 64px;
+  margin-bottom: 16px;
 
   color: rgb(255, 255, 255);
   font-weight: 600;
@@ -86,12 +113,24 @@ body {
   font-size: 24px;
   line-height: 32px;
   margin-bottom: 16px;
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 /* 4 ссылка перейти в каталог */
 .top__link {
-  font-size: 16px;
-  line-height: 24px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.top__link:hover {
+  text-decoration: underline;
 }
 
 /* 5. h2 Специальные предлжения */
