@@ -204,6 +204,33 @@ body {
   color: #888888;
 }
 
+.link_catalog {
+  margin-left: 120px;
+  margin-top: 39px;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
+
+.footer {
+  margin-top: 64px;
+  height: 207px;
+  background: rgb(247, 246, 246);
+}
+
+/* .footer_logo {
+  color: rgb(0, 0, 0);
+  font-size: 36px;
+  font-weight: 600;
+  line-height: 44px;
+  letter-spacing: 0%;
+  text-align: left;
+} */
+
 /* 10. h4 с текстом меню и контакты */
 /* <h4></h4>
  с текстом «Меню»:
@@ -243,14 +270,26 @@ body {
 
 /* 13. поле ввода input type email */
 .footer-email {
-  background: #ffffff;
-  border: 1px solid #c4c4c4;
+  width: 260px;
+  height: 40px;
+  /* text */
   box-sizing: border-box;
-  border-radius: 20px;
-  font-style: normal;
-  font-size: 15px;
-  line-height: 18px;
-  color: #c4c4c4;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 16px;
+
+  background: rgb(255, 255, 255);
+}
+
+.footer-email::placeholder {
+  color: rgb(196, 196, 196);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-top: 12px;
+  padding-bottom: 13px;
+  padding-left: 17px;
 }
 
 /* 14. кнопка подписаться */
