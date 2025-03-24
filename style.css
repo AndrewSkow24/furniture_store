@@ -134,8 +134,9 @@ body {
 }
 
 .product-content {
-  margin-left: 120px;
-  margin-right: 120px;
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
 }
 
 /* 5. h2 Специальные предлжения */
@@ -185,6 +186,11 @@ body {
   line-height: 17px;
   color: #888888;
   margin-bottom: 12px;
+}
+
+.price_box {
+  display: flex;
+  gap: 32px;
 }
 
 /* 8. параграф p 21 000 */
