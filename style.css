@@ -7,17 +7,19 @@ a {
   text-decoration: none;
 }
 
+/* формула для центрирования контента */
+.center {
+  padding-left: calc(50% - 600px);
+  padding-right: calc(50% - 600px);
+}
+
 .header {
   height: 76px;
-  margin-left: 103px;
-  margin-right: 101px;
 }
 
 .top__section {
   width: 1236px;
   height: 290px;
-  margin-left: 103px;
-  margin-right: 101px;
 }
 
 /* .nav,
@@ -43,6 +45,13 @@ body {
   width: 198px;
 }
 
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+}
+
 /* поиск */
 .header__input {
   width: 288px;
@@ -65,6 +74,11 @@ body {
 
 .header__input::placeholder {
   color: rgb(255, 255, 255);
+}
+
+.nav {
+  display: flex;
+  gap: 32px;
 }
 
 /* 1 верхние ссылки (каталог, коризина */
@@ -135,7 +149,8 @@ body {
 
 .product-content {
   display: flex;
-  gap: 32px;
+  column-gap: 32px;
+  row-gap: 56px;
   flex-wrap: wrap;
 }
 
@@ -211,7 +226,6 @@ body {
 }
 
 .link_catalog {
-  margin-left: 120px;
   margin-top: 39px;
   color: rgb(0, 0, 0);
   font-size: 16px;
@@ -219,7 +233,7 @@ body {
   line-height: 24px;
   letter-spacing: 0%;
   text-align: left;
-  text-decoration-line: underline;
+  text-decoration: underline;
 }
 
 .footer {
@@ -228,14 +242,29 @@ body {
   background: rgb(247, 246, 246);
 }
 
-/* .footer_logo {
-  color: rgb(0, 0, 0);
-  font-size: 36px;
-  font-weight: 600;
-  line-height: 44px;
-  letter-spacing: 0%;
-  text-align: left;
-} */
+.footer-content {
+  display: flex;
+  /* justify-content: space-around; */
+  /* ßalign-items: center; */
+}
+
+.footer_logo {
+  margin-top: 32px;
+  margin-bottom: 131px;
+}
+
+.footer-menu {
+  width: 76px;
+  margin-left: 212px;
+  margin-right: 129px;
+  margin-top: 32px;
+  margin-bottom: 59px;
+}
+
+.footer-contact {
+  margin-right: 192px;
+  margin-top: 32px;
+}
 
 /* 10. h4 с текстом меню и контакты */
 /* <h4></h4>
@@ -257,10 +286,16 @@ body {
   line-height: 17px;
   color: #888888;
   text-decoration: none;
+  display: block;
+  margin-bottom: 12px;
 }
 
 .footer-link:hover {
   text-decoration: underline;
+}
+
+.footer-form {
+  margin-top: 32px;
 }
 
 /* 12. текст получайте обновления */
@@ -282,8 +317,10 @@ body {
   box-sizing: border-box;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 16px;
-
   background: rgb(255, 255, 255);
+  display: block;
+  margin-bottom: 8px;
+  box-sizing: border-box;
 }
 
 .footer-email::placeholder {
@@ -309,4 +346,5 @@ body {
   font-size: 15px;
   line-height: 18px;
   color: #000000;
+  display: block;
 }
