@@ -40,6 +40,14 @@ body {
   background-size: cover;
 }
 
+.top_catalog {
+  height: 400px;
+  background: url(img/catalog_header.jpeg), rgb(196, 196, 196);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 /* интерьер */
 .top__logo {
   width: 198px;
@@ -415,4 +423,17 @@ body {
   line-height: 18px;
   color: #000000;
   display: block;
+}
+
+/* catalog */
+
+.catalog_header {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 128px;
+  margin-bottom: 126px;
 }
