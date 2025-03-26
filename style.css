@@ -285,22 +285,30 @@ body {
 }
 
 .footer {
-  margin-top: 64px;
+  margin-top: 32px;
+  /* padding-bottom: 40px; */
   height: 207px;
   background: rgb(247, 246, 246);
   display: flex;
-  gap: 212px;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
-.footer_logo {
+/* .footer_logo {
   margin-top: 32px;
-}
+} */
 
 .footer-content {
+  width: 792px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer_info {
   display: flex;
   gap: 129px;
-  /* justify-content: space-around; */
-  /* align-items: center; */
 }
 
 .footer-menu {
@@ -358,7 +366,7 @@ body {
   margin-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 12px;
 }
 
 /* 12. текст получайте обновления */
