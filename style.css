@@ -437,3 +437,41 @@ body {
   margin-top: 128px;
   margin-bottom: 126px;
 }
+
+.select {
+  position: relative;
+}
+
+.select select {
+  display: block;
+  /* от ширины div */
+  width: 182px;
+  /* отступы от рамки */
+  padding: 0.75rem 2.5rem 0.75rem 1rem;
+  background: none;
+  border: 1px solid #ccc;
+  /* chrome */
+  --webkit-appearance: none;
+  /* убирание дефолтных стрелок */
+  appearance: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
+  color: rgb(0, 0, 0);
+}
+
+.select::after {
+  content: "";
+  display: block;
+  border-style: solid;
+  border-width: 6px 5px 0 5px;
+  border-color: transparent transparent transparent;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 1rem;
+  z-index: 1;
+  margin-top: -3px;
+}
