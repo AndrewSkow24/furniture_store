@@ -485,7 +485,7 @@ body {
 
 .custom-select {
   position: relative;
-  width: 182px;
+  width: 227px;
 }
 
 /* select внутри div */
@@ -493,17 +493,34 @@ body {
   width: 100%;
   appearance: none;
   overflow: hidden;
-  padding: 8px 30px 8px 12px;
+  padding-top: 9px;
+  padding-bottom: 11px;
+  padding-left: 23px;
   box-sizing: border-box;
   border: 1px solid rgb(196, 196, 196);
   border-radius: 20px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 
 .custom-select::after {
   content: url(img/catalog_filtration.svg);
   position: absolute;
-  right: 12px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: 22px;
+  top: 13px;
+  bottom: 16px;
+  /* transform: translateY(-50%); */
   pointer-events: none;
+  box-sizing: border-box;
+}
+
+.filtration_first {
+  width: 182;
+}
+
+.filtration_second {
+  width: 227px;
 }
