@@ -25,21 +25,32 @@
 
     <main class="main center">
       <!-- start filter block -->
-      <div>
+      <div class="nav_filter_block center">
         <!-- хлебные крошки -->
         <nav class="bread-crumbs">
-          <a href="index.html">Главная</a>
-          <a href="catalog.html">Каталог товаров</a>
+          <a class="bread__link" href="index.html">Главная</a>
+          <span class="bread__slash">/</span>
+          <a class="bread__link" href="catalog.html">Каталог товаров</a>
         </nav>
-        <div class="select">
-          <select name="" id="">
-            <option value="new">Сначала новые</option>
-            <option value="expensive">Сначала дорогие</option>
-            <option value="poor">Сначала дешевые</option>
-          </select>
+
+        <div class="filter-box">
+          <!-- select1 -->
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="new">Сначала новые</option>
+              <option value="expensive">Сначала дорогие</option>
+              <option value="poor">Сначала дешевые</option>
+            </select>
+          </div>
+          <!-- select 2 -->
+          <div class="custom-select">
+            <select name="" id="">
+              <option value="new">Фильтрация</option>
+            </select>
+          </div>
         </div>
+        <!-- end filtration -->
       </div>
-      <!-- end filtration -->
     </main>
 
     <!-- start footer -->

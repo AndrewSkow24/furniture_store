@@ -438,40 +438,72 @@ body {
   margin-bottom: 126px;
 }
 
-.select {
-  position: relative;
+.nav_filter_block {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 64px;
 }
 
-.select select {
-  display: block;
-  /* от ширины div */
-  width: 182px;
-  /* отступы от рамки */
-  padding: 0.75rem 2.5rem 0.75rem 1rem;
-  background: none;
-  border: 1px solid #ccc;
-  /* chrome */
-  --webkit-appearance: none;
-  /* убирание дефолтных стрелок */
-  appearance: none;
+.bread-crumbs {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px;
+}
+
+.bread__link {
+  color: rgb(0, 0, 0);
   font-size: 16px;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 32px;
   letter-spacing: 0%;
   text-align: left;
-  color: rgb(0, 0, 0);
 }
 
-.select::after {
-  content: "";
-  display: block;
-  border-style: solid;
-  border-width: 6px 5px 0 5px;
-  border-color: transparent transparent transparent;
-  pointer-events: none;
+.bread__link:hover {
+  text-decoration: underline;
+}
+
+.bread__slash {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.filter-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 0px;
+}
+
+.custom-select {
+  position: relative;
+  width: 182px;
+}
+
+/* select внутри div */
+.custom-select select {
+  width: 100%;
+  appearance: none;
+  overflow: hidden;
+  padding: 8px 30px 8px 12px;
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 20px;
+}
+
+.custom-select::after {
+  content: url(img/catalog_filtration.svg);
   position: absolute;
+  right: 12px;
   top: 50%;
-  right: 1rem;
-  z-index: 1;
-  margin-top: -3px;
+  transform: translateY(-50%);
+  pointer-events: none;
 }
