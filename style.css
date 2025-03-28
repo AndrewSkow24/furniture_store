@@ -58,6 +58,7 @@ body {
   justify-content: space-between;
   align-items: center;
   border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+  flex-wrap: wrap;
 }
 
 /* поиск */
@@ -87,6 +88,7 @@ body {
 .nav {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 /* 1 верхние ссылки (каталог, коризина */
@@ -183,6 +185,7 @@ body {
   line-height: 41px;
   letter-spacing: 0%;
   text-align: center;
+  flex-wrap: wrap;
 }
 
 .for__item_big {
@@ -262,6 +265,7 @@ body {
 .price_box {
   display: flex;
   gap: 32px;
+  flex-wrap: wrap;
 }
 
 /* 8. параграф p 21 000 */
@@ -317,6 +321,7 @@ body {
 .footer_info {
   display: flex;
   gap: 129px;
+  flex-wrap: wrap;
 }
 
 .footer-menu {
@@ -326,6 +331,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .footer-contact {
@@ -333,6 +339,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* 10. h4 с текстом меню и контакты */
@@ -367,6 +374,7 @@ body {
   align-items: center;
   gap: 20px;
   padding: 0px;
+  flex-wrap: wrap;
 }
 
 .footer-form {
@@ -375,6 +383,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 /* 12. текст получайте обновления */
@@ -442,6 +451,7 @@ body {
   display: flex;
   justify-content: space-between;
   margin-top: 64px;
+  flex-wrap: wrap;
 }
 
 .bread-crumbs {
@@ -451,6 +461,7 @@ body {
   align-items: flex-start;
   gap: 10px;
   padding: 0px;
+  flex-wrap: wrap;
 }
 
 .bread__link {
@@ -481,6 +492,7 @@ body {
   align-items: flex-start;
   gap: 10px;
   padding: 0px;
+  flex-wrap: wrap;
 }
 
 .custom-select {
@@ -523,4 +535,14 @@ body {
 
 .filtration_second {
   width: 227px;
+}
+
+.more {
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
 }
