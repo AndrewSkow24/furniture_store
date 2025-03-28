@@ -452,6 +452,7 @@ body {
   justify-content: space-between;
   margin-top: 64px;
   flex-wrap: wrap;
+  margin-bottom: 41px;
 }
 
 .bread-crumbs {
