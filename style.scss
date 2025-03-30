@@ -1,4 +1,4 @@
-@charset "UTF-8";
+@import "vars";
 * {
   margin: 0;
   padding: 0;
@@ -28,6 +28,7 @@ a {
     margin-left: 120px;
     margin-right: 120px;
   } */
+
 body {
   font-family: Montserrat, sans-serif;
 }
@@ -38,19 +39,22 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-}
-.top_catalog {
-  height: 400px;
-  background: url(img/catalog_header.jpeg), rgb(196, 196, 196);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-.top__logo {
-  width: 198px;
+
+  &_catalog {
+    height: 400px;
+    background: url(img/catalog_header.jpeg), rgb(196, 196, 196);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  &__logo {
+    width: 198px;
+  }
 }
 
 /* интерьер */
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -77,10 +81,6 @@ body {
   padding-left: 32px;
   padding-right: 32px;
   box-sizing: border-box;
-}
-
-.header__input::-moz-placeholder {
-  color: rgb(255, 255, 255);
 }
 
 .header__input::placeholder {
@@ -123,6 +123,7 @@ body {
   line-height: 70px;
   margin-top: 64px;
   margin-bottom: 16px;
+
   color: rgb(255, 255, 255);
   font-weight: 600;
   line-height: 70px;
@@ -160,13 +161,13 @@ body {
 
 .product-content {
   display: flex;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
+  column-gap: 32px;
   row-gap: 56px;
   flex-wrap: wrap;
 }
 
 /* start меьель для */
+
 .for__content {
   display: grid;
   gap: 32px;
@@ -212,8 +213,8 @@ body {
 .for__item5 {
   background-image: url(img/for5.png);
 }
-
 /* конец мебель для */
+
 /* 5. h2 Специальные предлжения */
 /* Заголовок 
   <h2></h2>
@@ -311,6 +312,7 @@ body {
 /* .footer_logo {
     margin-top: 32px;
   } */
+
 .footer-content {
   width: 792px;
   display: flex;
@@ -423,7 +425,7 @@ body {
 /* 14. кнопка подписаться */
 .footer-button {
   background: rgba(222, 215, 215, 0.41);
-  border: 1px solid #ffffff;
+  border: 1px solid $color-text;
   box-sizing: border-box;
   border-radius: 20px;
   width: 260px;
@@ -435,6 +437,7 @@ body {
 }
 
 /* catalog */
+
 .catalog_header {
   color: rgb(255, 255, 255);
   font-size: 64px;
@@ -503,9 +506,7 @@ body {
 /* select внутри div */
 .custom-select select {
   width: 100%;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  appearance: none;
   overflow: hidden;
   padding-top: 9px;
   padding-bottom: 11px;
@@ -549,21 +550,4 @@ body {
   text-decoration-line: underline;
 }
 
-.top-cart {
-  height: 400px;
-  background-image: url(img/top_cart.jpeg);
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.heading-big {
-  color: rgb(255, 255, 255);
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 70px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-top: 128px;
-  margin-bottom: 126px;
-}/*# sourceMappingURL=style.css.map */
+@import "cart";

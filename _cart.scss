@@ -1,0 +1,19 @@
+.top-cart {
+  height: 400px;
+  background-image: url(img/top_cart.jpeg);
+  //   растягивание на всю область
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.heading-big {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-top: 128px;
+  margin-bottom: 126px;
+}
