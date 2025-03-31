@@ -55,10 +55,160 @@
     gap: 14px;
   }
 
+  &__heading {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0px;
+    text-align: left;
+  }
+
+  &__text {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__price {
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  &__link-box {
+    display: flex;
+    gap: 30px;
+  }
+
+  &__link {
+    color: rgb(0, 0, 0);
+    font-family: Montserrat;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 210%;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration-line: underline;
+  }
+
+  &__count {
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    appearance: none;
+    width: 71px;
+    height: 51px;
+    color: rgb(0, 0, 0);
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 210%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
   &__form {
     min-height: 556px;
     border-radius: 20px;
     background: rgb(247, 246, 246);
     grid-column: span 4;
+
+    .form__heading {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 29px;
+      letter-spacing: 0px;
+      text-align: center;
+      padding-top: 42px;
+      padding-bottom: 35px;
+    }
+
+    .input_data {
+      min-height: 143px;
+      padding-left: 27px;
+      padding-right: 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 44px;
+
+      .input_field {
+        color: rgb(0, 0, 0);
+        font-family: Montserrat;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 17px;
+        letter-spacing: 0px;
+        text-align: left;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 1px solid rgb(202, 205, 216);
+        appearance: none;
+        background-image: none;
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+
+    .form-price {
+      color: rgb(0, 0, 0);
+      font-family: Montserrat;
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0px;
+      text-align: center;
+      margin-top: 64px;
+      margin-bottom: 18px;
+    }
+
+    .form_button {
+      width: 290px;
+      height: 41px;
+      box-sizing: border-box;
+      border: 1px solid rgb(4, 4, 4);
+      border-radius: 20px;
+      margin-left: 45px;
+      margin-right: 44px;
+      text-align: center;
+      color: rgb(0, 0, 0);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0px;
+      text-align: center;
+      background-color: transparent;
+    }
+  }
+
+  &__button-block {
+    display: flex;
+    justify-content: left;
+    gap: 7px;
+    // margin-top: ;
+  }
+
+  &__button {
+    width: 200px;
+    height: 37px;
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    border-radius: 50px;
+    background-color: transparent;
+    color: rgb(2, 2, 2);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0px;
+    text-align: center;
+    margin-top: -46px;
   }
 }
