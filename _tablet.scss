@@ -9,7 +9,8 @@
       height: 268px;
     }
 
-    .product-content {
+    .product-content,
+    .product-item {
       column-gap: 29px;
       row-gap: 39px;
     }
@@ -17,6 +18,36 @@
 
   .footer_logo {
     display: none;
+  }
+
+  // уникальное для cart
+
+  .cart {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 32px;
+    margin-top: 64px;
+
+    &__button-block {
+      margin-top: 32px;
+    }
+
+    .black_button {
+      background-color: black;
+      color: white;
+    }
+
+    &__content {
+      grid-column: span 12;
+    }
+
+    &__form {
+      min-height: 556px;
+      border-radius: 20px;
+      background: rgb(247, 246, 246);
+      grid-column: span 4;
+      min-width: 376px;
+    }
   }
 }
 
@@ -27,6 +58,10 @@
   }
 
   .product-item {
+    width: 345px;
+  }
+
+  .cart__item {
     width: 345px;
   }
 }
