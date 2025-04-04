@@ -12,6 +12,8 @@ a {
 .center {
   padding-left: calc(50% - 600px);
   padding-right: calc(50% - 600px);
+  // padding-left: 120px;
+  // padding-right: 120px;
 }
 
 .header {
@@ -85,6 +87,10 @@ body {
   display: flex;
   gap: 32px;
   flex-wrap: wrap;
+}
+
+.menu-mob {
+  display: none;
 }
 
 /* 1 верхние ссылки (каталог, коризина */
@@ -546,3 +552,4 @@ body {
 
 @import "cart";
 @import "tablet";
+@import "mobile";
