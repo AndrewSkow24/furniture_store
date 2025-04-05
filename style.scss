@@ -1,555 +1,81 @@
-@import "vars";
 * {
   margin: 0;
   padding: 0;
+  font-family: Montserrat, sans-serif;
 }
 
 a {
   text-decoration: none;
 }
 
-/* формула для центрирования контента */
 .center {
-  padding-left: calc(50% - 600px);
-  padding-right: calc(50% - 600px);
-  // padding-left: 120px;
-  // padding-right: 120px;
-}
-
-.header {
-  height: 76px;
-}
-
-.top__section {
-  // width: 1236px;
-  height: 290px;
-}
-
-body {
-  font-family: Montserrat, sans-serif;
+  margin-left: 120px;
+  margin-right: 120px;
 }
 
 .top {
   height: 735px;
-  background: url(img/header.png), rgb(196, 196, 196);
-  background-repeat: no-repeat;
+  background: url(img/top_background.jpg), rgb(196, 196, 196);
   background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
 
-  &_catalog {
-    height: 400px;
-    background: url(img/catalog_header.jpeg), rgb(196, 196, 196);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 76px;
+
+    &__mobile-menu {
+      display: none;
+    }
+
+    &__input {
+      width: 288px;
+      height: 41px;
+      box-sizing: border-box;
+      border: 1px solid rgb(255, 255, 255);
+      border-radius: 20px;
+      color: rgb(255, 255, 255);
+      font-family: Montserrat;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: left;
+      background-color: transparent;
+      padding-left: 32px;
+    }
+    &__input::placeholder {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      text-align: left;
+    }
+    &__input:focus {
+      outline: none;
+      box-shadow: none;
+      border-color: initial; /* или указать свой цвет */
+    }
+    &__link-box {
+      width: 170px;
+      display: flex;
+      gap: 32px;
+    }
+    &__link {
+      color: rgb(255, 255, 255);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 20px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    &__link:hover {
+      text-decoration: underline;
+    }
   }
-
-  &__logo {
-    width: 198px;
-  }
 }
 
-/* интерьер */
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
-  flex-wrap: wrap;
-}
-
-/* поиск */
-.header__input {
-  width: 288px;
-  height: 41px;
-  box-sizing: border-box;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 20px;
-  background-color: transparent;
-  outline: none;
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: left;
-  padding-left: 32px;
-  padding-right: 32px;
-  box-sizing: border-box;
-}
-
-.header__input::placeholder {
-  color: rgb(255, 255, 255);
-}
-
-.nav {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-.menu-mob {
-  display: none;
-}
-
-/* 1 верхние ссылки (каталог, коризина */
-.header__link {
-  text-decoration: none;
-  width: 66px;
-  color: rgb(255, 255, 255);
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.header__link:hover {
-  text-decoration: underline;
-}
-
-/* 2 всё что заслуживает ваш дом */
-/* Заголовок 
-  <h1>
-   (Всё, чего заслуживает ваш дом):
-   Верхний отступ 64px.
-   Нижний отступ 16px. */
-.top__title {
-  max-width: 792px;
-  font-weight: 600px;
-  font-size: 64px;
-  line-height: 70px;
-  margin-top: 64px;
-  margin-bottom: 16px;
-
-  color: rgb(255, 255, 255);
-  font-weight: 600;
-  line-height: 70px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-/* 3 наша мебель ваше отражение  */
-/* <p></p>
-   (Наша мебель — ваше отражение):
-   Нижний отступ 16px. */
-.top__text {
-  font-size: 24px;
-  line-height: 32px;
-  margin-bottom: 16px;
-  color: rgb(255, 255, 255);
-  font-weight: 400;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-/* 4 ссылка перейти в каталог */
-.top__link {
-  color: rgb(255, 255, 255);
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.top__link:hover {
-  text-decoration: underline;
-}
-
-.product-content {
-  display: flex;
-  column-gap: 32px;
-  row-gap: 56px;
-  flex-wrap: wrap;
-}
-
-/* start меьель для */
-
-.for__content {
-  display: grid;
-  gap: 32px;
-  grid-template-columns: repeat(12, 1fr);
-}
-
-.for__item {
-  height: 415px;
-  grid-column: span 4;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  color: rgb(255, 255, 255);
-  font-size: 34px;
-  font-weight: 600;
-  line-height: 41px;
-  letter-spacing: 0%;
-  text-align: center;
-  flex-wrap: wrap;
-}
-
-.for__item_big {
-  grid-column: span 6;
-}
-
-.for__item1 {
-  background-image: url(img/for1.png);
-}
-
-.for__item2 {
-  background-image: url(img/for2.png);
-}
-
-.for__item3 {
-  background-image: url(img/for3.png);
-}
-
-.for__item4 {
-  background-image: url(img/for4.png);
-}
-
-.for__item5 {
-  background-image: url(img/for5.png);
-}
-/* конец мебель для */
-
-/* 5. h2 Специальные предлжения */
-/* Заголовок 
-  <h2></h2>
-   с текстом «Специальные предложения» (который вы делали в первом домашнем задании):
-   Нижний отступ 32px. */
-.product-content__title {
-  font-weight: 600;
-  font-size: 48px;
-  line-height: 59px;
-  color: #000000;
-  padding-bottom: 32px;
-  margin-top: 64px;
-}
-
-.product-item {
-  /* height: 377px; */
-  width: 370px;
-}
-
-.product_image {
-  margin-bottom: 10px;
-  height: 250px;
-}
-
-/* 6. h3 кресло vilora */
-/* <h3></h3>
-   с текстом «Кресло VILORA»:
-   Нижний отступ 8px. */
-.product-item__title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-  margin-bottom: 8px;
-  /* height: 29px; */
-}
-
-/* 7. Параграф Мягкое и уютное .... */
-/* <p></p>
-   с текстом «Мягкое и уютное, аккуратное и стильное»:
-   Нижний отступ 12px.
-   */
-.product-item__text {
-  font-size: 14px;
-  line-height: 17px;
-  color: #888888;
-  margin-bottom: 12px;
-}
-
-.price_box {
-  display: flex;
-  gap: 32px;
-  flex-wrap: wrap;
-}
-
-/* 8. параграф p 21 000 */
-.product_price {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #050505;
-}
-
-/* 9. параграф с зачёркнутой ценой */
-.old_price {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  text-decoration-line: line-through;
-  color: #888888;
-}
-
-.link_catalog {
-  margin-top: 39px;
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-decoration: underline;
-}
-
-.footer {
-  margin-top: 32px;
-  /* padding-bottom: 40px; */
-  height: 207px;
-  background: rgb(247, 246, 246);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-/* .footer_logo {
-    margin-top: 32px;
-  } */
-
-.footer-content {
-  width: 792px;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.footer_info {
-  display: flex;
-  gap: 129px;
-  flex-wrap: wrap;
-}
-
-.footer-menu {
-  width: 76px;
-  margin-top: 32px;
-  margin-bottom: 59px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.footer-contact {
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-/* 10. h4 с текстом меню и контакты */
-/* <h4></h4>
-   с текстом «Меню»:
-   Нижний отступ 12px. */
-.footer__content__title {
-  font-weight: 500;
-  font-size: 24px;
-  line-height: 29px;
-  color: #000000;
-}
-
-/* 11. нижние ссылки в подвале 
-  (главная, каталог, корзина, номер телефона, email)*/
-.footer-link {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 17px;
-  color: #888888;
-  text-decoration: none;
-  display: block;
-}
-
-.footer-link:hover {
-  text-decoration: underline;
-}
-
-.footer-icons {
-  display: flex;
-  /* justify-content: center; */
-  align-items: center;
-  gap: 20px;
-  padding: 0px;
-  flex-wrap: wrap;
-}
-
-.footer-form {
-  width: 260px;
-  margin-top: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-/* 12. текст получайте обновления */
-/* <p></p>
-   с текстом «Получайте наши новости и обновления»:
-   Нижний отступ 16px. */
-.footer__text {
-  font-size: 12px;
-  line-height: 16px;
-  color: #000000;
-  /* margin-bottom: 16px; */
-}
-
-/* 13. поле ввода input type email */
-.footer-email {
-  width: 260px;
-  height: 40px;
-  /* text */
-  box-sizing: border-box;
-  border: 1px solid rgb(196, 196, 196);
-  border-radius: 16px;
-  background: rgb(255, 255, 255);
-  display: block;
-  box-sizing: border-box;
-  outline: none;
-  color: rgb(196, 196, 196);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 15px;
-  letter-spacing: 0%;
-  text-align: left;
-  padding-top: 12px;
-  padding-bottom: 13px;
-  padding-left: 17px;
-}
-
-/* 14. кнопка подписаться */
-.footer-button {
-  background: rgba(222, 215, 215, 0.41);
-  border: 1px solid $color-text;
-  box-sizing: border-box;
-  border-radius: 20px;
-  width: 260px;
-  height: 46px;
-  font-size: 15px;
-  line-height: 18px;
-  color: #000000;
-  display: block;
-}
-
-/* catalog */
-
-.catalog_header {
-  color: rgb(255, 255, 255);
-  font-size: 64px;
-  font-weight: 600;
-  line-height: 70px;
-  letter-spacing: 0%;
-  text-align: left;
-  margin-top: 128px;
-  margin-bottom: 126px;
-}
-
-.nav_filter_block {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 64px;
-  flex-wrap: wrap;
-  margin-bottom: 41px;
-}
-
-.bread-crumbs {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0px;
-  flex-wrap: wrap;
-}
-
-.bread__link {
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.bread__link:hover {
-  text-decoration: underline;
-}
-
-.bread__slash {
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 32px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.filter-box {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 10px;
-  padding: 0px;
-  flex-wrap: wrap;
-}
-
-.custom-select {
-  position: relative;
-  width: 227px;
-}
-
-/* select внутри div */
-.custom-select select {
-  width: 100%;
-  appearance: none;
-  overflow: hidden;
-  padding-top: 9px;
-  padding-bottom: 11px;
-  padding-left: 23px;
-  box-sizing: border-box;
-  border: 1px solid rgb(196, 196, 196);
-  border-radius: 20px;
-  font-size: 16px;
-  font-weight: 500;
-  line-height: 20px;
-  letter-spacing: 0%;
-  text-align: left;
-}
-
-.custom-select::after {
-  content: url(img/catalog_filtration.svg);
-  position: absolute;
-  right: 22px;
-  top: 13px;
-  bottom: 16px;
-  /* transform: translateY(-50%); */
-  pointer-events: none;
-  box-sizing: border-box;
-}
-
-.filtration_first {
-  width: 182;
-}
-
-.filtration_second {
-  width: 227px;
-}
-
-.more {
-  color: rgb(0, 0, 0);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 24px;
-  letter-spacing: 0%;
-  text-align: left;
-  text-decoration-line: underline;
-}
-
-@import "cart";
 @import "tablet";
 @import "mobile";
