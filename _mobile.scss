@@ -36,4 +36,33 @@
     text-align: center;
     // padding: auto;
   }
+
+  .for__content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .item-horizontal {
+    height: 244px;
+  }
+
+  .item-vertical {
+    height: 374px;
+  }
+
+  .item {
+    font-size: 28px;
+  }
+
+  .product {
+    &-box {
+      display: flex;
+      flex-direction: column;
+      gap: 32px;
+    }
+    .item__img {
+      width: 100%;
+    }
+  }
 }
