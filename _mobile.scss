@@ -1,10 +1,11 @@
 @media (min-width: 325px) and (max-width: 767px) {
   .center {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
   }
 
   .header {
+    padding-top: 32px;
     &__input {
       display: none;
     }
@@ -22,5 +23,17 @@
       align-items: center;
       gap: 32px;
     }
+  }
+
+  .top__main-title {
+    min-width: 343px;
+    min-height: 176px;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: center;
+    // padding: auto;
   }
 }

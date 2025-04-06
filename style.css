@@ -3,6 +3,7 @@
   margin: 0;
   padding: 0;
   font-family: Montserrat, sans-serif;
+  box-sizing: border-box;
 }
 
 a {
@@ -20,12 +21,18 @@ a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  box-sizing: border-box;
+}
+.top__content {
+  display: flex;
+  flex-direction: column;
 }
 .top .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   min-height: 76px;
+  border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
 }
 .top .header__mobile-menu {
   display: none;
@@ -45,6 +52,7 @@ a {
   text-align: left;
   background-color: transparent;
   padding-left: 32px;
+  font-family: Montserrat, sans-serif;
 }
 .top .header__input::-moz-placeholder {
   color: rgb(255, 255, 255);
@@ -52,6 +60,7 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  font-family: Montserrat, sans-serif;
 }
 .top .header__input::placeholder {
   color: rgb(255, 255, 255);
@@ -59,6 +68,7 @@ a {
   font-weight: 400;
   line-height: 20px;
   text-align: left;
+  font-family: Montserrat, sans-serif;
 }
 .top .header__input:focus {
   outline: none;
@@ -81,6 +91,36 @@ a {
 .top .header__link:hover {
   text-decoration: underline;
 }
+.top__main-title {
+  margin-top: 63px;
+  min-height: 140px;
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0%;
+  box-sizing: border-box;
+}
+.top__text {
+  margin-top: 16px;
+  margin-bottom: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.top__link {
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
+}
 
 @media (min-width: 768px) and (max-width: 1023px) {
   .center {
@@ -90,8 +130,11 @@ a {
 }
 @media (min-width: 325px) and (max-width: 767px) {
   .center {
-    margin-left: 12px;
-    margin-right: 12px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .header {
+    padding-top: 32px;
   }
   .header__input {
     display: none;
@@ -106,5 +149,15 @@ a {
     display: flex;
     align-items: center;
     gap: 32px;
+  }
+  .top__main-title {
+    min-width: 343px;
+    min-height: 176px;
+    color: rgb(255, 255, 255);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0%;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
