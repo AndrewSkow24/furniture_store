@@ -282,17 +282,20 @@ a {
   min-height: 207px;
 
   &__content {
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
+    display: flex;
+    justify-content: space-between;
   }
   &__logo {
     margin-top: 32px;
-    grid-column: span 4;
+    margin-right: 212px;
+  }
+  &__items {
+    display: flex;
+    gap: 129px;
   }
   &__item {
     margin-top: 32px;
     margin-bottom: 59px;
-    grid-column: span 2;
     display: flex;
     flex-direction: column;
     gap: 12px;
@@ -318,12 +321,13 @@ a {
     gap: 20px;
     align-items: center;
   }
+
   &__form {
     display: flex;
+    margin-left: 192px;
     flex-direction: column;
     justify-content: right;
     gap: 8px;
-    grid-column: 10 / span 3;
     margin-top: 32px;
     margin-bottom: 64px;
   }

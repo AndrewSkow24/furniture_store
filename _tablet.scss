@@ -20,4 +20,29 @@
   .product__item {
     grid-column: span 6;
   }
+
+  .footer {
+    margin-top: 64px;
+    &__content {
+      display: grid;
+      grid-template-columns: repeat(8, 1fr);
+    }
+
+    &__logo {
+      display: none;
+    }
+
+    .footer__contacts {
+      grid-column: span 3;
+    }
+
+    &__icon-box {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+    &__form {
+      grid-column: span 3;
+    }
+  }
 }
