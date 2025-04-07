@@ -333,6 +333,10 @@ a {
   .product__item {
     grid-column: span 12;
   }
+  .product__title {
+    margin-top: 32px;
+    font-size: 24px;
+  }
   .item__img {
     min-height: 226px;
   }
