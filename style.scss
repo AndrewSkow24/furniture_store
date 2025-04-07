@@ -125,6 +125,11 @@ a {
   margin-top: 64px;
   &__heading {
     margin-bottom: 32px;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0%;
   }
 
   &__content {
@@ -188,14 +193,73 @@ a {
 }
 
 .product {
+  &__title {
+    margin-top: 64px;
+    margin-bottom: 32px;
+    color: rgb(0, 0, 0);
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 59px;
+    letter-spacing: 0%;
+  }
   &-box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
     column-gap: 32px;
+    row-gap: 56px;
   }
 
   &__item {
     grid-column: span 4;
+    .item_content {
+      display: flex;
+      flex-direction: column;
+    }
+    .item__img {
+      object-fit: cover;
+      object-position: center;
+      min-height: 250px;
+    }
+    .item__title {
+      margin-top: 10px;
+      color: rgb(0, 0, 0);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    .item__text {
+      margin-top: 9px;
+      color: rgb(136, 136, 136);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    .item__price-box {
+      margin-top: 12px;
+      display: flex;
+      gap: 32px;
+    }
+    .current_price {
+      color: rgb(5, 5, 5);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+    .old_price {
+      color: rgb(136, 136, 136);
+      font-size: 24px;
+      font-weight: 500;
+      line-height: 29px;
+      letter-spacing: 0%;
+      text-align: left;
+      text-decoration-line: line-through;
+    }
   }
 }
 

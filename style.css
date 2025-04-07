@@ -127,6 +127,11 @@ a {
 }
 .for__heading {
   margin-bottom: 32px;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  letter-spacing: 0%;
 }
 .for__content {
   display: grid;
@@ -183,14 +188,75 @@ a {
   background-size: cover;
 }
 
+.product__title {
+  margin-top: 64px;
+  margin-bottom: 32px;
+  color: rgb(0, 0, 0);
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 59px;
+  letter-spacing: 0%;
+}
 .product-box {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   -moz-column-gap: 32px;
        column-gap: 32px;
+  row-gap: 56px;
 }
 .product__item {
   grid-column: span 4;
+}
+.product__item .item_content {
+  display: flex;
+  flex-direction: column;
+}
+.product__item .item__img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  min-height: 250px;
+}
+.product__item .item__title {
+  margin-top: 10px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.product__item .item__text {
+  margin-top: 9px;
+  color: rgb(136, 136, 136);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.product__item .item__price-box {
+  margin-top: 12px;
+  display: flex;
+  gap: 32px;
+}
+.product__item .current_price {
+  color: rgb(5, 5, 5);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.product__item .old_price {
+  color: rgb(136, 136, 136);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: line-through;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
@@ -206,12 +272,11 @@ a {
   }
   .product-box {
     display: grid;
-    grid-template-columns: repeat(8, 1fr);
-    -moz-column-gap: 32px;
-         column-gap: 32px;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 29px;
   }
   .product__item {
-    grid-column: span 4;
+    grid-column: span 6;
   }
 }
 @media (min-width: 325px) and (max-width: 767px) {
