@@ -290,15 +290,97 @@ a {
   grid-column: span 2;
   display: flex;
   flex-direction: column;
+  gap: 12px;
+}
+.footer__heading {
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__link {
+  color: rgb(136, 136, 136);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  letter-spacing: 0%;
+  text-align: left;
 }
 .footer__icon-box {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .footer__form {
   display: flex;
   flex-direction: column;
+  justify-content: right;
+  gap: 8px;
   grid-column: 10/span 3;
+  margin-top: 32px;
+  margin-bottom: 64px;
+}
+.footer__text {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__input {
+  box-sizing: border-box;
+  border: 1px solid rgb(196, 196, 196);
+  border-radius: 16px;
+  background: rgb(255, 255, 255);
+  color: rgb(196, 196, 196);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-left: 17px;
+  padding-bottom: 12px;
+  padding-top: 13px;
+}
+.footer__input::-moz-placeholder {
+  color: rgb(196, 196, 196);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__input::placeholder {
+  color: rgb(196, 196, 196);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.footer__input:focus {
+  outline: none;
+}
+.footer__button {
+  text-align: center;
+  padding-bottom: 12px;
+  padding-top: 13px;
+  border-radius: 16px;
+  background: rgba(222, 215, 215, 0.41);
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  letter-spacing: 0%;
+  border: none;
+  box-sizing: border-box;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
