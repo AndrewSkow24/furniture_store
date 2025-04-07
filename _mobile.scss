@@ -55,14 +55,35 @@
     font-size: 28px;
   }
 
-  .product {
-    &-box {
-      display: flex;
-      flex-direction: column;
-      gap: 32px;
-    }
-    .item__img {
-      width: 100%;
-    }
+  .product-box {
+    row-gap: 32px;
+  }
+
+  .product__item {
+    grid-column: span 12;
+  }
+
+  .item__img {
+    min-height: 226px;
+  }
+
+  .item__title {
+    margin-top: 9px;
+    font-size: 18px;
+  }
+  .item__text {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .item__price-box {
+    margin-top: 8px;
+    display: flex;
+    gap: 32px;
+  }
+  .current_price {
+    font-size: 18px;
+  }
+  .old_price {
+    font-size: 18px;
   }
 }

@@ -273,7 +273,9 @@ a {
   .product-box {
     display: grid;
     grid-template-columns: repeat(12, 1fr);
-    gap: 29px;
+    -moz-column-gap: 29px;
+         column-gap: 29px;
+    row-gap: 39px;
   }
   .product__item {
     grid-column: span 6;
@@ -326,11 +328,31 @@ a {
     font-size: 28px;
   }
   .product-box {
+    row-gap: 32px;
+  }
+  .product__item {
+    grid-column: span 12;
+  }
+  .item__img {
+    min-height: 226px;
+  }
+  .item__title {
+    margin-top: 9px;
+    font-size: 18px;
+  }
+  .item__text {
+    margin-top: 4px;
+    font-size: 14px;
+  }
+  .item__price-box {
+    margin-top: 8px;
     display: flex;
-    flex-direction: column;
     gap: 32px;
   }
-  .product .item__img {
-    width: 100%;
+  .current_price {
+    font-size: 18px;
+  }
+  .old_price {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=style.css.map */
