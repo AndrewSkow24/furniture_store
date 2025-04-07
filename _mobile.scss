@@ -36,7 +36,9 @@
     text-align: center;
     // padding: auto;
   }
-
+  .for__heading {
+    font-size: 24px;
+  }
   .for__content {
     display: flex;
     flex-direction: column;
@@ -90,5 +92,10 @@
   }
   .old_price {
     font-size: 18px;
+  }
+
+  .catalog-bootom-link {
+    font-size: 16px;
+    margin-top: 36px;
   }
 }
