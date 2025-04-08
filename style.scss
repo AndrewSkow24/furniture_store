@@ -285,13 +285,15 @@ a {
     display: flex;
     justify-content: space-between;
   }
-  &__logo {
+  .logo-box {
     margin-top: 32px;
-    margin-right: 212px;
+    // margin-right: 212px;
   }
   &__items {
     display: flex;
+    justify-content: space-between;
     gap: 129px;
+    // margin-right: 192px;
   }
   &__item {
     margin-top: 32px;
@@ -323,13 +325,13 @@ a {
   }
 
   &__form {
+    min-width: 260px;
     display: flex;
-    margin-left: 192px;
     flex-direction: column;
-    justify-content: right;
     gap: 8px;
     margin-top: 32px;
     margin-bottom: 64px;
+    flex-wrap: wrap;
   }
   &__text {
     color: rgb(0, 0, 0);
