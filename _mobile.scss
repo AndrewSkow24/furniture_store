@@ -107,7 +107,7 @@
     &__content {
       display: flex;
       row-gap: 70px;
-      flex-wrap: wrap;
+      flex-direction: column;
       justify-content: space-between;
     }
     .logo-box {
@@ -125,10 +125,9 @@
       margin-bottom: 0px;
     }
     &__form {
-      // min-width: 260px;
-      min-width: 100%; // Растягиваем на всю ширину
-      margin: 20px 0; // Корректируем отступы
-      align-items: center; // Центрируем элементы формы
+      min-width: 260px;
+      align-items: center;
+      box-sizing: border-box;
     }
   }
 }

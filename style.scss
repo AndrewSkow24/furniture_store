@@ -356,6 +356,7 @@ a {
     padding-left: 17px;
     padding-bottom: 12px;
     padding-top: 13px;
+    min-width: 260px;
   }
   &__input::placeholder {
     color: rgb(196, 196, 196);
@@ -385,6 +386,7 @@ a {
     letter-spacing: 0%;
     border: none;
     box-sizing: border-box;
+    min-width: 260px;
   }
 }
 
