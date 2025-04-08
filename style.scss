@@ -14,9 +14,36 @@ a {
   margin-right: 120px;
 }
 
-.top {
-  height: 735px;
+.top-catalog {
+  height: 400px;
+  background: url(img/top_catalog.jpeg), rgb(196, 196, 196);
+}
+
+.top-cart {
+  height: 400px;
+  background: url(img/top_cart.jpeg), rgb(196, 196, 196);
+}
+
+.top-index {
   background: url(img/top_background.jpg), rgb(196, 196, 196);
+  height: 735px;
+}
+
+.main-title-container {
+  padding-top: 126px;
+  padding-bottom: 128px;
+}
+
+.top-main-title {
+  color: rgb(255, 255, 255);
+  font-size: 64px;
+  font-weight: 600;
+  line-height: 70px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.top {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,6 +60,7 @@ a {
     align-items: center;
     min-height: 76px;
     border-bottom: 0.5px solid rgba(255, 255, 255, 0.8);
+    box-sizing: border-box;
 
     &__mobile-menu {
       display: none;
