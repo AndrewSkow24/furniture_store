@@ -25,6 +25,11 @@
     }
   }
 
+  .top-main-title {
+    font-size: 48px;
+    text-align: center;
+  }
+
   .top__main-title {
     min-width: 343px;
     min-height: 176px;
@@ -113,8 +118,7 @@
     .logo-box {
       display: none;
     }
-    &__items {
-    }
+
     &__item {
       margin-top: 33px;
       grid-column: span 2;
@@ -129,5 +133,12 @@
       align-items: center;
       box-sizing: border-box;
     }
+  }
+
+  .bread-crumbs-box {
+    margin-top: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 }
