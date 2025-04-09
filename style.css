@@ -419,6 +419,7 @@ a {
 
 .bread-crumbs-box {
   margin-top: 64px;
+  margin-bottom: 41px;
   display: flex;
   justify-content: space-between;
 }
