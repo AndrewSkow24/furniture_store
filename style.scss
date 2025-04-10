@@ -482,5 +482,120 @@ a {
   }
 }
 
+// cart
+
+.cart-content {
+  padding-top: 64px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 33px;
+  box-sizing: border-box;
+  .cart-content__product {
+    grid-column: span 8;
+    .heading_line {
+      display: grid;
+      grid-template-columns: 7fr 1fr;
+    }
+  }
+
+  .end {
+    grid-column: end;
+  }
+  .cart-card {
+    display: grid;
+    grid-template-columns: 2fr 5fr 1fr;
+    padding-top: 25px;
+    margin-top: 14px;
+    border-top: 0.5px solid rgb(202, 205, 216);
+    gap: 31px;
+  }
+
+  .card-cart__right-side {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .right-side__title {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  .right-side__description {
+    color: rgb(136, 136, 136);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0%;
+    text-align: left;
+    max-width: 3fr;
+  }
+
+  .right-side__price {
+    color: rgb(5, 5, 5);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0%;
+  }
+
+  .cart-content__form {
+    grid-column: span 4;
+  }
+
+  .right-side__link-box {
+    display: flex;
+    gap: 30px;
+    .right-side-link {
+      color: rgb(0, 0, 0);
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 210%;
+      letter-spacing: 0px;
+      text-align: center;
+      text-decoration-line: underline;
+    }
+  }
+
+  .number__count {
+    grid-column: end;
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    width: 71px;
+    height: 51px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 210%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
+
+  .buttons_block {
+    margin-top: 50px;
+    display: flex;
+    gap: 7px;
+    .buttons-cart {
+      box-sizing: border-box;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: transparent;
+      border-radius: 50px;
+      width: 200px;
+      height: 37px;
+      color: rgb(2, 2, 2);
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 17px;
+      letter-spacing: 0px;
+      text-align: center;
+    }
+  }
+}
+
 @import "tablet";
 @import "mobile";
