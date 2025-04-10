@@ -531,9 +531,6 @@ a {
   line-height: 20px;
   letter-spacing: 0%;
 }
-.cart-content .cart-content__form {
-  grid-column: span 4;
-}
 .cart-content .right-side__link-box {
   display: flex;
   gap: 30px;
@@ -577,6 +574,89 @@ a {
   font-size: 14px;
   font-weight: 400;
   line-height: 17px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.cart-content .cart-content__form {
+  grid-column: span 4;
+  border-radius: 20px;
+  background: rgb(247, 246, 246);
+  display: flex;
+  flex-direction: column;
+}
+.cart-content .cart-content__form .cart-form__title {
+  padding-top: 42px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.cart-content .cart-content__form .input_block {
+  margin-top: 35px;
+  margin-left: 27px;
+  margin-right: 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 41px;
+}
+.cart-content .cart-content__form .input_block .cart-form-input {
+  border: none;
+  border-bottom: 1px solid rgb(202, 205, 216);
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+}
+.cart-content .cart-content__form .input_block .cart-form-input::-moz-placeholder {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+}
+.cart-content .cart-content__form .input_block .cart-form-input::placeholder {
+  color: rgb(0, 0, 0);
+  font-family: Montserrat;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  letter-spacing: 0px;
+}
+.cart-content .cart-content__form .input_block .cart-form-input:focus, .cart-content .cart-content__form .input_block .cart-form-input:active, .cart-content .cart-content__form .input_block .cart-form-input:hover {
+  outline: none;
+  box-shadow: none;
+  border-color: initial; /* или конкретный цвет */
+  background-color: initial;
+}
+.cart-content .cart-content__form .cart-form-price {
+  padding-top: 64px;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+}
+.cart-content .cart-content__form .cart-form-price .bold_text {
+  font-weight: 500;
+}
+.cart-content .cart-content__form .cart-form-button {
+  box-sizing: border-box;
+  border: 1px solid rgb(4, 4, 4);
+  border-radius: 20px;
+  padding: 10px 77px 11px 76px;
+  margin: 18px auto;
+  background-color: transparent;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
   letter-spacing: 0px;
   text-align: center;
 }
