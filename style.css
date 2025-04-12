@@ -1017,8 +1017,9 @@ a {
     display: none;
   }
   .cart-content .cart-content__product .cart-card {
+    margin-top: 0;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: 3fr 1fr;
   }
   .cart-content .cart-content__product .cart-card .card-cart__left-side {
     display: none;
