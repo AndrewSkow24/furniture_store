@@ -208,4 +208,19 @@
       }
     }
   }
+
+  .number__count {
+    // grid-column: end;
+    border: none;
+    border-radius: 6px;
+    background: rgb(247, 246, 246);
+    width: 71px;
+    height: 51px;
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 210%;
+    letter-spacing: 0px;
+    text-align: center;
+  }
 }
