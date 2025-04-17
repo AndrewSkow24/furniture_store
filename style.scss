@@ -242,6 +242,13 @@ a {
     .item_content {
       display: flex;
       flex-direction: column;
+      transition: all 0.9s;
+      box-sizing: border-box;
+      padding: 16px;
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 5px #ccc;
+      }
     }
     .item__img {
       object-fit: cover;

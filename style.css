@@ -238,6 +238,13 @@ a {
 .product__item .item_content {
   display: flex;
   flex-direction: column;
+  transition: all 0.9s;
+  box-sizing: border-box;
+  padding: 16px;
+}
+.product__item .item_content:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 5px #ccc;
 }
 .product__item .item__img {
   -o-object-fit: cover;
