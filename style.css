@@ -1,4 +1,12 @@
 @charset "UTF-8";
+@keyframes myAnim {
+  0% {
+    transform: scale(0.5);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -584,6 +592,12 @@ a {
   line-height: 17px;
   letter-spacing: 0px;
   text-align: center;
+  transition: background-color 1s;
+  transition: color 1s;
+}
+.cart-content .buttons_block .buttons-cart:hover {
+  background-color: black;
+  color: white;
 }
 .cart-content .cart-content__form {
   grid-column: span 4;
@@ -668,13 +682,41 @@ a {
   letter-spacing: 0px;
   text-align: center;
 }
+.cart-content .cart-content__form .cart-form-button:hover {
+  animation: myAnim 2s ease 0s 1 normal forwards;
+}
 
 .footer-svg-icon:hover path {
   fill: black !important;
+  transition: all 5s;
 }
 
 .footer-svg-icon:hover {
   filter: brightness(0) saturate(100%);
+}
+
+.catalog-bootom-link {
+  transition: all 1s;
+}
+.catalog-bootom-link:hover {
+  color: rgb(136, 136, 136);
+  text-decoration: none;
+}
+
+.footer__button {
+  transition: all 0.5s;
+}
+.footer__button:hover {
+  background-color: black;
+  color: white;
+}
+
+.buttons-cart {
+  transition: all 0.5s;
+}
+.buttons-cart:hover {
+  background-color: black;
+  color: white;
 }
 
 @media (min-width: 768px) and (max-width: 1023px) {
