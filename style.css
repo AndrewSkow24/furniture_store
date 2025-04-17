@@ -669,6 +669,14 @@ a {
   text-align: center;
 }
 
+.footer-svg-icon:hover path {
+  fill: black !important;
+}
+
+.footer-svg-icon:hover {
+  filter: brightness(0) saturate(100%);
+}
+
 @media (min-width: 768px) and (max-width: 1023px) {
   .center {
     margin-left: 24px;

@@ -680,5 +680,14 @@ a {
   }
 }
 
+// эффекты наведения
+
+.footer-svg-icon:hover path {
+  fill: black !important;
+}
+
+.footer-svg-icon:hover {
+  filter: brightness(0) saturate(100%);
+}
 @import "tablet";
 @import "mobile";
